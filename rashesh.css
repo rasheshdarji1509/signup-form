@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(62, 139, 161);
+  font-family: "Dhurjati", sans-serif;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  padding: 30px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.container header {
+  font-size: 25px;
+  font-weight: 200px;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.container form {
+  border-radius: 10px;
+  position: relative;
+  min-height: 750px;
+  background-color: whitesmoke;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 15px;
+  height: 100%;
+  column-gap: 20px;
+
+  justify-content: center;
+}
+.input_field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  
+  padding:20px;
+  
+  /* margin-right: 20px; */
+}
+
+.input_field label {
+  font-size: 25px;
+}
+.input_field input {
+  width: 260px;
+  
+  padding: 10px;
+  margin-top: 0px;
+  border-radius: 5px;
+  font-size: 18px;
+  height: 30px;
+
+  border: 1px solid rgb(125, 119, 119);
+}
+
+.container .gender {
+  margin-left: 22px;
+}
+
+.genderselect {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+}
+.genderselect label {
+  font-size: 25px;
+  margin-left: 10px;
+}
+.genderselect input {
+  margin-top: 5px;
+}
+.genderselect input {
+  margin-left: 10px;
+}
+.checkbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.checkbox p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.checkbox input {
+  width: 30px;
+  height: 30px;
+}
+.Signup_button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.Signup_button button {
+  height: 40px;
+  width: 300px;
+  background-color: rgb(62, 139, 161);
+  color: black;
+  font-weight: 500px;
+  border-radius: 10px;
+  border: 1px solid;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    height: 100%;
+  }
+}
